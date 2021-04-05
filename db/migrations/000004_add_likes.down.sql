@@ -1,0 +1,2 @@
+ALTER TABLE likes DROP CONSTRAINT IF EXISTS unique_user_post;
+DROP TABLE IF EXISTS likes;

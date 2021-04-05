@@ -1,0 +1,21 @@
+{{ define "header" }}
+
+package {{.PkgName}}
+
+{{ end }}
+
+{{ define "struct" }}
+type {{.Name}} struct {
+	{{range .Fields}}{{.Name}} {{.Type}} {{.JsonMeta}}
+	{{end}}
+}
+{{ end }}
+
+{{ define "obj_api" }}
+{{ end }}
+
+{{ define "query_api" }}
+{{ end }}
+
+{{ define "managed_api" }}
+{{ end }}
